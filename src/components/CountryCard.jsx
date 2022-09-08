@@ -6,7 +6,7 @@ function CountryCard ({dat ,ClickHandler}){
       }
     let data = dat.altSpellings[0]
   return (
-    <div className="countryCard" key={dat.unMember}>
+    <div className="countryCard" id='countryCard' key={dat.unMember}>
       <div className="countryCardBody">
         <img src={dat.flags.png} alt="" />
         <Link to={'/Country'} onClick={HandleClikcHandler}>

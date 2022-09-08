@@ -7,10 +7,15 @@ export default class Countries extends Component {
     countries: [],
   };
   componentDidMount() {
-    axios.get("https://restcountries.com/v3.1/all").then((res) => {
+    axios.get("https://restcountries.com/v3.1/all")
+    .then((res) => {
+    if(res){
+     setTimeout(() => {
       this.setState({
         countries: res.data.slice(0, 20),
-      });
+      })
+     }, 1000);
+    };
     });
   }
   searchHandler = (e) => {
