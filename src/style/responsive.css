@@ -45,7 +45,67 @@
     border-radius: 10px;
     border: 1px solid gainsboro;
   }
+  .country {
+    width: 90%;
+    margin: 40px auto;
+  }
   .card {
+    width: 100% !important;
+  }
+  .card img {
+    margin-bottom: 10 px;
+  }
+  .card .card-head {
+    display: flex;
+    flex-direction: column;
+    padding: 0px;
+  }
+  .card-head h5,
+  p {
+    text-align: left;
+    width: 100%;
+  }
+  .mapAndTranslations h5 {
+    padding: 0%;
+    margin: 0%;
+    font-size: 18px;
+  }
+  .mapAndTranslations {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .translation {
+    border: 1px solid gainsboro;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding:  20px 40px;
+    max-height: 1rem;
+    width: calc(100% / 2 - 10px);
+    position: relative;
+    margin-left: 10px;
+    margin-top: 10px;
+  }
+  .aboutContent {
+    width: 100%;
+  }
+  .about {
+    display: flex;
+    flex-direction:column-reverse;
+    justify-content: center;
+  }
+  .text {
+    width: 100%;
+    text-align: justify;
+  }
+  .userImg {
+    width: 100%;
+  }
+  .userImg img {
     width: 100%;
   }
 }
