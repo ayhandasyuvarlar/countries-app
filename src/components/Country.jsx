@@ -1,6 +1,5 @@
 import React, { Component } from "react";
 import axios from "axios";
-import RandomCountries from "./RandomCountries";
 export default class Country extends Component {
   state = {
     country: {},
@@ -42,10 +41,6 @@ export default class Country extends Component {
       <div>
         <div id="countrs">Loadingg.....</div>
         <div id="country">{this.textArea()}</div>
-        <div>
-          <div></div>
-        <RandomCountries/>
-        </div>
       </div>
     );
   }
