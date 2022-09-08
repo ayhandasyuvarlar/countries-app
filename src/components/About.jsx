@@ -25,6 +25,7 @@ const sosialMedia = [
     target: "_blank",
   },
 ];
+
 function About() {
   return (
     <section className="aboutContent">
@@ -32,7 +33,6 @@ function About() {
         <div className="text">
           <h2>About</h2>
           <h5>
-    
             Hello everyone, my name is Ayhan, I am from Turkey, the city I live
             in is Gaziantep. I am 21 years old. I'm studying at Gaziantep
             University, I started with a software course and then I kept coding
@@ -54,9 +54,9 @@ function About() {
           <h2>Contact Me</h2>
         </div>
         <div className="sosialCards">
-          {sosialMedia.map((media) => {
+          {sosialMedia.map((media, idx) => {
             return (
-              <a href={media.link} target={media.target}>
+              <a href={media.link} target={media.target} key={idx}>
                 <div className="sosialCard">
                   <i className={media.icon}></i>
                   <h3>{media.name}</h3>
@@ -66,6 +66,7 @@ function About() {
           })}
         </div>
       </div>
+    
     </section>
   );
 }
