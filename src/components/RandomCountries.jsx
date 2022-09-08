@@ -1,8 +1,7 @@
 import React, { Component } from "react";
-
-import CountryCard from "./CountryCard";
 import axios from "axios";
-export default class Countries extends Component {
+import CountryCard from "./CountryCard";
+export default class RandomCountries extends Component {
   state = {
     countries: [],
     errorMessage: "",
@@ -13,7 +12,7 @@ export default class Countries extends Component {
       .then((res) => {
         if (res) {
           this.setState({
-            countries: res.data.slice(0, 20),
+            countries: Math.floor(Math.random(res.data.slice(0, 5))),
           });
         }
       })
@@ -21,15 +20,6 @@ export default class Countries extends Component {
         this.setState({ errorMessage: err.message });
       });
   }
-  searchHandler = (e) => {
-    let country = e.target.value;
-    axios.get("https://restcountries.com/v3.1/name/" + country).then((res) => {
-      this.setState({
-        countries: res.data,
-      });
-      console.log(res)
-    });
-  };
   render() {
     const countryList = this.state.countries.map((dat) => {
       return (
@@ -42,21 +32,15 @@ export default class Countries extends Component {
         </>
       );
     });
+
     return (
-      <>
-        <div className="input">
-          <input
-            type="text"
-            className="inputtext"
-            onChange={this.searchHandler}
-          />
-        </div>
+      <div>
         {this.state.countries.length === 0 ? (
           <div className="countrList">{this.state.errorMessage}</div>
         ) : (
           <div className="countryList">{countryList}</div>
         )}
-      </>
+      </div>
     );
   }
 }
