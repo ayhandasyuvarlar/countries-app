@@ -49,6 +49,7 @@ export default class Countries extends Component {
             type="text"
             className="inputtext"
             onChange={this.searchHandler}
+            placeholder = {'country search'}
           />
         </div>
         {this.state.countries.length === 0 ? (
