@@ -5,17 +5,17 @@ const navItemList = [
   {
     linkName: "Country Choose",
     id: 1,
-    link : '/'
+    link: "/",
   },
   {
     linkName: "About",
     id: 2,
-    link : '/About'
+    link: "/About",
   },
   {
     linkName: "Contact",
     id: 3,
-    link : '/Contact'
+    link: "/Contact",
   },
 ];
 
@@ -23,7 +23,7 @@ const Navbar = () => {
   return (
     <nav>
       {navItemList.map((nav) => {
-        return <NavItem  navItem={nav} key={nav.id}/>;
+        return <NavItem navItem={nav} key={nav.id} />;
       })}
     </nav>
   );

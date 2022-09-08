@@ -1,4 +1,5 @@
 import React from "react";
+
 const sosialMedia = [
   {
     link: "https://www.linkedin.com/in/ayhan-da%C5%9Fyuvarlar-03a76220a/",
@@ -66,7 +67,6 @@ function About() {
           })}
         </div>
       </div>
-    
     </section>
   );
 }
