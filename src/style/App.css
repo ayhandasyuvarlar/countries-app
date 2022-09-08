@@ -172,3 +172,25 @@ margin-top:10px;
   height: 20rem;
   object-fit: contain;
 }
+.sosialMediaGroup {
+  padding-left: 40px;
+  width: 95%;
+  overflow: hidden;
+}
+.sosialCards{
+  display: flex;
+  flex-direction: row;
+}
+.sosialCard{
+  width: 15.4rem;
+  border: 1px solid gainsboro;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+  padding: 30px 10px;
+}
+.sosialCard i {
+  font-size: 40px;
+}

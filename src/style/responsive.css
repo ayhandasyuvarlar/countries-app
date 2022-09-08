@@ -108,4 +108,26 @@
   .userImg img {
     width: 100%;
   }
+  .sosialMediaGroup{
+    padding-left: 0px;
+  }
+  .sosialCards{
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    margin-left: 0px;
+    overflow-x: auto;
+  }
+  .sosialCard{
+    width:18rem;
+    border: 1px solid gainsboro;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: #343434;
+  }
+  .sosialCard i {
+    font-size: 40px;
+  }
 }

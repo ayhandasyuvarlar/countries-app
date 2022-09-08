@@ -3,7 +3,7 @@ import NavItem from "../toolbox/NavItem";
 
 const navItemList = [
   {
-    linkName: "Ülke Seç",
+    linkName: "Country Choose",
     id: 1,
     link : '/'
   },
