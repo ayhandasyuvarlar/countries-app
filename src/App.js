@@ -1,5 +1,6 @@
 import { BrowserRouter, Routes , Route} from "react-router-dom";
-import "./App.css";
+import "./style/App.css";
+import "./style/responsive.css";
 import About from "./components/About";
 import Contact from "./components/Contact";
 import Countries from "./components/Countries";

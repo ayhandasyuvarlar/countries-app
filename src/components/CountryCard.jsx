@@ -8,6 +8,7 @@ function CountryCard ({dat ,ClickHandler}){
   return (
     <div className="countryCard" key={dat.unMember}>
       <div className="countryCardBody">
+        <img src={dat.flags.png} alt="" />
         <Link to={'/Country'} onClick={HandleClikcHandler}>
           <div className="countryCardOffical">{dat.name.official}</div>
         </Link>
