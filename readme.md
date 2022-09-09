@@ -17,7 +17,9 @@
 
 ## React-router-dom and routing
 
-// video
+
+https://user-images.githubusercontent.com/81258778/189355886-f5501da9-f64d-4725-8db8-88ea97498880.mp4
+
 
 ### What is Components ?
 
@@ -26,6 +28,11 @@
 ### Why do we use component in React?
 
 ### A Component is one of the core building blocks of React. In other words, we can say that every application you will develop in React will be made up of pieces called components. Components make the task of building UIs much easier.
+
+
+
+https://user-images.githubusercontent.com/81258778/189356243-8b44b26d-4418-4cdb-b2e5-7b2d1fd6d46a.mp4
+
 
 ## Life cycle events
 
