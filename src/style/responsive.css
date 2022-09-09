@@ -83,7 +83,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding:  20px 40px;
+    padding: 20px 40px;
     max-height: 1rem;
     width: calc(100% / 2 - 10px);
     position: relative;
@@ -95,7 +95,7 @@
   }
   .about {
     display: flex;
-    flex-direction:column-reverse;
+    flex-direction: column-reverse;
     justify-content: center;
   }
   .text {
@@ -108,18 +108,18 @@
   .userImg img {
     width: 100%;
   }
-  .sosialMediaGroup{
+  .sosialMediaGroup {
     padding-left: 0px;
   }
-  .sosialCards{
+  .sosialCards {
     display: flex;
     flex-direction: row;
     justify-content: left;
     margin-left: 0px;
     overflow-x: auto;
   }
-  .sosialCard{
-    width:18rem;
+  .sosialCard {
+    width: 18rem;
     border: 1px solid gainsboro;
     display: flex;
     flex-direction: column;
@@ -130,7 +130,7 @@
   .sosialCard i {
     font-size: 40px;
   }
-  .contactContent{
+  .contactContent {
     width: 95%;
     margin: auto;
   }

@@ -1,7 +1,6 @@
 import imgOne from "../img/1.png";
 import imgTwo from "../img/2.png";
 import imgThree from "../img/3.png";
-
 const Contact = () => {
   return (
     <>
